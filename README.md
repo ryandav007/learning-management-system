@@ -73,5 +73,3 @@ running the command I did reinitialize the database.
 
 Note also if reinitializing the datbase you also need to run:
 node scripts/seed.ts
-
-See https://youtu.be/Big_aFLmekI?t=30748 for step-by-step
