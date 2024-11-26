@@ -8,13 +8,11 @@ import Link from "next/link";
 import { SearchInput } from "./search-input";
 import { SafeProfile } from "@/types";
 
-interface NavbarRoutesProps  {
-  currentProfile?: SafeProfile | null
+interface NavbarRoutesProps {
+  currentProfile?: SafeProfile | null;
 }
 
-export const NavbarRoutes : React.FC<NavbarRoutesProps> = ({
-  currentProfile
-}) => {
+export const NavbarRoutes: React.FC<NavbarRoutesProps> = ({ currentProfile }) => {
   const pathname = usePathname();
   const isTeacherPage = pathname?.startsWith("/teacher");
   const isPlayerPage = pathname?.includes("/chapters");
@@ -45,7 +43,7 @@ export const NavbarRoutes : React.FC<NavbarRoutesProps> = ({
           </Link>
         ) : null}
 
-       <UserButton afterSignOutUrl="/" />
+        <UserButton afterSignOutUrl="/" />
       </div>
     </>
   );

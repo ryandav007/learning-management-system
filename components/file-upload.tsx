@@ -8,13 +8,9 @@ import { ourFileRouter } from "@/app/api/uploadthing/core";
 interface FileUploadProps {
   onChange: (url?: string, originalFilename?: string) => void;
   endpoint: keyof typeof ourFileRouter;
-};
+}
 
-export const FileUpload = ({
-  onChange,
-  endpoint
-}: FileUploadProps) => {
-
+export const FileUpload = ({ onChange, endpoint }: FileUploadProps) => {
   return (
     <UploadDropzone
       endpoint={endpoint}
@@ -27,4 +23,4 @@ export const FileUpload = ({
       }}
     />
   );
-}
+};

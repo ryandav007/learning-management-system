@@ -13,7 +13,7 @@ enum MemberRole {
   TEACHER
   STUDENT
 }
-
+ 
 model Profile {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   userId String @unique
