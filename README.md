@@ -45,15 +45,9 @@ Vercel https://vercel.com - for server-less hosting.
 
 Mux https://mux.com - for Videos storage.
 
-Clerk https://clerk.com This is covered in the first hour or so of the video. It's the easiest
-authentication available and just works. It is so simple and easy to integrate into your app at least for
-me it is awesome. I've integrated it into my own Portfolio app https://github.com/kendevco/Portfolio https://folio.kendec.co.
+Clerk https://clerk.com 
 
-MongoDB Atlas https://mongodb.com This project has deviated from Antonio's by using MongoDb.com. I've
-found it to be much more flexible for budding NextJS developers. I've created 7 free databases there
-so far and it is perfect for my needs. I had no problems modifying the schema for use with MongoDB and
-if you are looking for a project already adapted for Mongo - honestly the only changes were in the
-Schema! And Copilot did all the heavy lifting.
+MongoDB Atlas https://mongodb.com 
 
 UploadThing https://uploadthing.com/ for serverless upload storage.
 
@@ -65,9 +59,6 @@ To reset the database, run
     npx prisma migrate reset
     npx prisma db push
 
-Note that when I ran npx prisma migrate reset against mongodb.com I ran
-into errors in the terminal stating I lacked permission. However, after
-running the command I did reinitialize the database.
 
 Note also if reinitializing the datbase you also need to run:
 node scripts/seed.ts
